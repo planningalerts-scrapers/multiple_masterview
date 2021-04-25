@@ -42,7 +42,7 @@
   date_scraped: '2019-05-14'
   date_received: '2019-04-15'
 - council_reference: 10.2018.39.1
-  address: Roswill Dr, Putty 2330 NSW
+  address: 489 Roswill Dr, Putty 2330 NSW
   description: Dwelling House ONLY
   info_url: https://datracker.singleton.nsw.gov.au:444/Application/ApplicationDetails/010.2018.00000039.001
   date_scraped: '2019-05-14'
@@ -91,7 +91,7 @@
   date_received: '2019-04-23'
 - council_reference: 10.2019.77.1
   address: 42 Robertson Cct, Sedgefield 2330 NSW
-  description: Shed
+  description: Sheds and Horse Shelter
   info_url: https://datracker.singleton.nsw.gov.au:444/Application/ApplicationDetails/010.2019.00000077.001
   date_scraped: '2019-05-14'
   date_received: '2019-04-24'
@@ -167,6 +167,12 @@
   info_url: https://datracker.singleton.nsw.gov.au:444/Application/ApplicationDetails/012.2018.00000049.001
   date_scraped: '2019-05-14'
   date_received: '2019-05-02'
+- council_reference: 12.2018.51.2
+  address: 12B Pepper Cl, Hunterview 2330 NSW
+  description: Dwelling House
+  info_url: https://datracker.singleton.nsw.gov.au:444/Application/ApplicationDetails/012.2018.00000051.002
+  date_scraped: '2019-05-14'
+  date_received: '2019-05-09'
 - council_reference: 15.2019.34.1
   address: 103 Minimbah Dr, Whittingham 2330 NSW
   description: Septic Tank
@@ -272,8 +278,8 @@
   date_scraped: '2019-05-14'
   date_received: '2019-04-15'
 - council_reference: 8.2019.72.1
-  address: Mirannie Rd, Reedy Creek 2330 NSW
-  description: Dwelling House
+  address: 1586 Mirannie Rd, Reedy Creek 2330 NSW
+  description: Dwelling House - Consent Surrendered 25/01/2021
   info_url: https://datracker.singleton.nsw.gov.au:444/Application/ApplicationDetails/008.2019.00000072.001
   date_scraped: '2019-05-14'
   date_received: '2019-04-18'
@@ -410,7 +416,7 @@
   date_scraped: '2019-05-14'
   date_received: '2019-04-24'
 - council_reference: 9.2019.28.1
-  address: 5 Casswell Tce, Mcdougalls Hill 2330 NSW
+  address: 7 Casswell Tce, Mcdougalls Hill 2330 NSW
   description: Industrail Retail Outlet
   info_url: https://datracker.singleton.nsw.gov.au:444/Application/ApplicationDetails/009.2019.00000028.001
   date_scraped: '2019-05-14'

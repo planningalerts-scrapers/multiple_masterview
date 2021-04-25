@@ -43,8 +43,8 @@ module MasterviewScraper
 
     def self.body_rows(table)
       # If it's actually got a body use that
-      if table.at_xpath("tbody")
-        table.at_xpath("tbody").search("tr")
+      if table.at("tbody")
+        table.at("tbody").search("tr")
       # Otherwise assume the first row is the header and
       # return everything else
       else

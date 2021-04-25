@@ -121,28 +121,6 @@ module MasterviewScraper
       long_council_reference: true,
       types: [16, 9, 25],
       force_detail: true
-    },
-    singleton: {
-      url: "https://datracker.singleton.nsw.gov.au:444",
-      use_api: true,
-      force_detail: true
-    },
-    byron: {
-      url: "https://datracker.byron.nsw.gov.au/MasterViewUI-External",
-      use_api: true,
-      page_size: 10,
-      force_detail: true,
-      australian_proxy: true
-    },
-    camden: {
-      url: "https://planning.camden.nsw.gov.au",
-      use_api: true,
-      force_detail: true,
-      # There is at least one page
-      # https://planning.camden.nsw.gov.au/Application/ApplicationDetails/013.2017.00001246.005
-      # that takes about 80 seconds to return! So we need to increase the timeout. In fact that
-      # wasn't even enough. We need 3 minutes per page. Eek!
-      timeout: 180
     }
   }.freeze
 end

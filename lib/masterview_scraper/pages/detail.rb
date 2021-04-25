@@ -75,7 +75,12 @@ module MasterviewScraper
               "Operational Works",
               "Combined (MCU, RL, OW)",
               "Change Application",
-              "Concurrence Agency Assessment"
+              "Concurrence Agency Assessment",
+			  "Private Certified Approved",
+			  "Planning Consent Granted - DAP",
+			  "Completed",
+			  "Cancelled/Withdrawn",
+			  "Approved Delegated Authority"
             ].include?(detail)
               # Do nothing
             else
@@ -111,6 +116,7 @@ module MasterviewScraper
         "Approved by Council",
         "Approved with Conditions",
         "Approved Council Certifier",
+		"Approval Issued by Others",
         "Modification Approved",
         "Issued",
         "Certificate Issued",
@@ -172,6 +178,7 @@ module MasterviewScraper
         "Cancelled by Staff",
         "Planning Consent Refused - CAP",
         "Building Consent Refused - Delegation"
+		"Rejected by Staff"
       ].freeze
 
       UNKNOWN = [
@@ -179,6 +186,7 @@ module MasterviewScraper
         "Change in Workflow",
         "Application Lapsed",
         "Active"
+		"Action Completed"
       ].freeze
 
       # Get the data from the decision block as is but don't interpret it just yet

@@ -109,14 +109,14 @@ module MasterviewScraper
         "Approved Under Delegation",
         "Approved by Delegation",
         "Approved by Private Certifier",
-        "Private Certifier Approved",
         "Approved by Delegated Authority",
         "Approved by Delegated Officer",
-        "Approved Delegated Authority",
         "Approved by Council",
         "Approved with Conditions",
+		"Approved - Conditions",
         "Approved Council Certifier",
 		"Approval Issued by Others",
+		"Approved Delegated Authority",
         "Modification Approved",
         "Issued",
         "Certificate Issued",
@@ -126,6 +126,7 @@ module MasterviewScraper
         "Interim Certificate Issued CCC",
         "Planning Consent Granted - Private Cert",
         "Planning Consent Granted - Delegation",
+		"Planning Consent Granted - DAP",
         "Development Approval Granted-Delegation",
         "Development Approval-Privately Certified",
         "Variation To Application Approved",
@@ -150,7 +151,9 @@ module MasterviewScraper
         "PC Approved Complying Development",
         "Privately Certified CC Approval",
         "Privately Certified Occ Cert Issued",
-        "Final Certificate Issued CCC"
+        "Final Certificate Issued CCC",
+		"Private Certifier Approved",
+
       ].freeze
 
       WITHDRAWN = [
@@ -165,7 +168,7 @@ module MasterviewScraper
         "Surrender Consent",
         "Cancelled/Surrendered",
         "Cancelled",
-        "Cancelled/Withdrawn"
+		"Cancelled/Withdrawn"
       ].freeze
 
       REJECTED = [
@@ -175,18 +178,21 @@ module MasterviewScraper
         "Refused by Delegated Officer",
         # Haha. Withdrawn by staff - what a fantastic euphimism for rejected
         "Withdrawn by Staff",
-        "Cancelled by Staff",
         "Planning Consent Refused - CAP",
-        "Building Consent Refused - Delegation"
-		"Rejected by Staff"
+        "Building Consent Refused - Delegation",
+		"Rejected by Staff",
+		"Rejected - does not comply with EPA Regs",
+		"Rejected - Illegible Unclear"
       ].freeze
 
       UNKNOWN = [
         "NO DA - Certificate Only",
         "Change in Workflow",
         "Application Lapsed",
-        "Active"
-		"Action Completed"
+		"Action Completed",
+		"Completed",
+		"Interim OC Private Ceritifer",
+		"Awaiting Additional Information"
       ].freeze
 
       # Get the data from the decision block as is but don't interpret it just yet

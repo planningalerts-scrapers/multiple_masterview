@@ -113,8 +113,10 @@ module MasterviewScraper
         "Approved by Delegated Officer",
         "Approved by Council",
         "Approved with Conditions",
+		"Approved - Conditions",
         "Approved Council Certifier",
 		"Approval Issued by Others",
+		"Approved Delegated Authority",
         "Modification Approved",
         "Issued",
         "Certificate Issued",
@@ -124,6 +126,7 @@ module MasterviewScraper
         "Interim Certificate Issued CCC",
         "Planning Consent Granted - Private Cert",
         "Planning Consent Granted - Delegation",
+		"Planning Consent Granted - DAP",
         "Development Approval Granted-Delegation",
         "Development Approval-Privately Certified",
         "Variation To Application Approved",
@@ -148,7 +151,9 @@ module MasterviewScraper
         "PC Approved Complying Development",
         "Privately Certified CC Approval",
         "Privately Certified Occ Cert Issued",
-        "Final Certificate Issued CCC"
+        "Final Certificate Issued CCC",
+		"Private Certifier Approved",
+
       ].freeze
 
       WITHDRAWN = [
@@ -162,7 +167,8 @@ module MasterviewScraper
         # DAs for the same property conflicting with each other.
         "Surrender Consent",
         "Cancelled/Surrendered",
-        "Cancelled"
+        "Cancelled",
+		"Cancelled/Withdrawn"
       ].freeze
 
       REJECTED = [
@@ -174,14 +180,19 @@ module MasterviewScraper
         "Withdrawn by Staff",
         "Planning Consent Refused - CAP",
         "Building Consent Refused - Delegation",
-		"Rejected by Staff"
+		"Rejected by Staff",
+		"Rejected - does not comply with EPA Regs",
+		"Rejected - Illegible Unclear"
       ].freeze
 
       UNKNOWN = [
         "NO DA - Certificate Only",
         "Change in Workflow",
         "Application Lapsed",
-		"Action Completed"
+		"Action Completed",
+		"Completed",
+		"Interim OC Private Ceritifer",
+		"Awaiting Additional Information"
       ].freeze
 
       # Get the data from the decision block as is but don't interpret it just yet

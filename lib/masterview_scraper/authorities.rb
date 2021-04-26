@@ -26,11 +26,6 @@ module MasterviewScraper
       use_api: true,
       force_detail: true
     },
-    brisbane: {
-      url: "https://pdonline.brisbane.qld.gov.au/MasterViewUI/Modules/ApplicationMaster",
-      params: { "6" => "F" },
-      force_detail: true
-    },
     fairfield: {
       url: "https://openaccess.fairfieldcity.nsw.gov.au/OpenAccess/Modules/Applicationmaster",
       params: { "4a" => 10, "6" => "F" },
@@ -54,26 +49,10 @@ module MasterviewScraper
       state: "NSW",
       force_detail: true
     },
-    mackay: {
-      url: "https://planning.mackay.qld.gov.au/masterview/Modules/Applicationmaster",
-      params: {
-        "4a" => "443,444,445,446,487,555,556,557,558,559,560,564",
-        "6" => "F"
-      },
-      force_detail: true,
-      timeout: 120
-    },
     marion: {
       url: "http://development.marion.sa.gov.au/MasterViewUI",
       use_api: true,
       page_size: 10,
-      force_detail: true
-    },
-    moreton_bay: {
-      url: "http://pdonline.moretonbay.qld.gov.au/Modules/applicationmaster",
-      params: {
-        "6" => "F"
-      },
       force_detail: true
     },
     toowoomba: {

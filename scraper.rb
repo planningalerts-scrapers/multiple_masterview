@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+
 $LOAD_PATH << "./lib"
 
 require "masterview_scraper"
@@ -28,6 +29,9 @@ end
 authorities = MasterviewScraper::AUTHORITIES.keys
 
 puts "Scraping authorities: #{authorities.join(', ')}"
+
+
+
 exceptions = scrape(authorities)
 unless exceptions.empty?
   puts "\n***************************************************"

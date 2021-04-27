@@ -137,7 +137,7 @@ module MasterviewScraper
       # Has an incomplete certificate chain. See https://www.ssllabs.com/ssltest/analyze.html?d=datracking.griffith.nsw.gov.au
       disable_ssl_certificate_check: true,
       force_detail: true,
-      australian_proxy: true,
+      australian_proxy: false,
 	  timeout: 60
     },
 #    lismore: {

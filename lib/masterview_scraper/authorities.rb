@@ -137,7 +137,8 @@ module MasterviewScraper
       # Has an incomplete certificate chain. See https://www.ssllabs.com/ssltest/analyze.html?d=datracking.griffith.nsw.gov.au
       disable_ssl_certificate_check: true,
       force_detail: true,
-      australian_proxy: true
+      australian_proxy: true,
+	  timeout: 60
     },
 #    lismore: {
 #      url: "https://tracker.lismore.nsw.gov.au",
@@ -165,7 +166,8 @@ module MasterviewScraper
       url: "https://datracker.byron.nsw.gov.au/MasterViewUI-External",
       use_api: true,
       page_size: 10,
-      force_detail: true
+      force_detail: true,
+	  timeout: 60
     },
 #    camden: {
 #      url: "https://planning.camden.nsw.gov.au",

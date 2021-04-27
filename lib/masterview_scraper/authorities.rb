@@ -283,7 +283,8 @@ module MasterviewScraper
       use_api: true,
       page_size: 10,
       force_detail: true,
-	  timeout: 60
+	  timeout: 60,
+	  australian_proxy: true
     },
     camden: {
       url: "https://planning.camden.nsw.gov.au",

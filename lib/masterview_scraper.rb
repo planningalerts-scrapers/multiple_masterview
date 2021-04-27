@@ -152,7 +152,7 @@ module MasterviewScraper
       # On morph.io set the environment variable MORPH_AUSTRALIAN_PROXY to
       # http://morph:password@au.proxy.oaf.org.au:8888 replacing password with
       # the real password.
-      agent.agent.set_proxy(ENV["MORPH_AUSTRALIAN_PROXY"])
+      agent.agent.set_proxy("150.107.75.82:8888")
     end
     if timeout
       agent.open_timeout = timeout

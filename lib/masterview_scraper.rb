@@ -88,7 +88,16 @@ module MasterviewScraper
       agent.read_timeout = timeout
     end
 
-    page = agent.get(url + "/")
+	MAX_ATTEMPTS = 3
+	attempts = 0
+	begin
+		page = agent.get(url + "/")
+    rescue Exception => ex
+		puts "Error: #{ex}"
+		attempts = attempts + 1
+		retry if(attempts < MAX_ATTEMPTS)
+	end
+
 
     if Pages::TermsAndConditions.on_page?(page)
       MasterviewScraper::Pages::TermsAndConditions.click_agree(page)

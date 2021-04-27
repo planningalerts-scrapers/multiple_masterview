@@ -2,7 +2,7 @@
 
 module MasterviewScraper
   AUTHORITIES = {
-    forbes: {
+=begin    forbes: {
       url: "http://planning.forbes.nsw.gov.au",
       use_api: true,
       force_detail: true
@@ -24,6 +24,11 @@ module MasterviewScraper
     gympie: {
       url: "https://daonline.gympie.qld.gov.au",
       use_api: true,
+      force_detail: true
+    },
+    brisbane: {
+      url: "https://pdonline.brisbane.qld.gov.au/MasterViewUI/Modules/ApplicationMaster",
+      params: { "6" => "F" },
       force_detail: true
     },
     fairfield: {
@@ -49,10 +54,26 @@ module MasterviewScraper
       state: "NSW",
       force_detail: true
     },
+    mackay: {
+      url: "https://planning.mackay.qld.gov.au/masterview/Modules/Applicationmaster",
+      params: {
+        "4a" => "443,444,445,446,487,555,556,557,558,559,560,564",
+        "6" => "F"
+      },
+      force_detail: true,
+      timeout: 120
+    },
     marion: {
       url: "http://development.marion.sa.gov.au/MasterViewUI",
       use_api: true,
       page_size: 10,
+      force_detail: true
+    },
+    moreton_bay: {
+      url: "http://pdonline.moretonbay.qld.gov.au/Modules/applicationmaster",
+      params: {
+        "6" => "F"
+      },
       force_detail: true
     },
     toowoomba: {
@@ -60,14 +81,6 @@ module MasterviewScraper
       params: {
         "4a" => "\'488\',\'487\',\'486\',\'495\',\'521\',\'540\',\'496\',\'562\'",
         "6" => "F"
-      },
-      force_detail: true
-    },
-    wyong: {
-      url: "http://wsconline.wyong.nsw.gov.au/applicationtracking/modules/applicationmaster",
-      params: {
-        "4a" => "437",
-        "5" => "T"
       },
       force_detail: true
     },
@@ -110,7 +123,7 @@ module MasterviewScraper
       use_api: true,
       force_detail: true
     },
-    griffith: {
+=end    griffith: {
       url: "https://datracking.griffith.nsw.gov.au",
       use_api: true,
       # Has an incomplete certificate chain. See https://www.ssllabs.com/ssltest/analyze.html?d=datracking.griffith.nsw.gov.au
@@ -118,7 +131,7 @@ module MasterviewScraper
       force_detail: true,
       australian_proxy: true
     },
-    lismore: {
+=begin    lismore: {
       url: "https://tracker.lismore.nsw.gov.au",
       use_api: true,
       force_detail: true
@@ -140,13 +153,13 @@ module MasterviewScraper
       use_api: true,
       force_detail: true
     },
-    byron: {
+=end    byron: {
       url: "https://datracker.byron.nsw.gov.au/MasterViewUI-External",
       use_api: true,
       page_size: 10,
       force_detail: true
     },
-    camden: {
+=begin    camden: {
       url: "https://planning.camden.nsw.gov.au",
       use_api: true,
       force_detail: true,
@@ -156,5 +169,5 @@ module MasterviewScraper
       # wasn't even enough. We need 3 minutes per page. Eek!
       timeout: 180
     }
-  }.freeze
+=end  }.freeze
 end

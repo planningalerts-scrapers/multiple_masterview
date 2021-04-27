@@ -88,14 +88,15 @@ module MasterviewScraper
       agent.read_timeout = timeout
     end
 
-	ma = 3
+	max_attempts = 5
 	attempts = 0
 	begin
 		page = agent.get(url + "/")
     rescue Exception => ex
 		puts "Error: #{ex}"
+		sleep(2**attempts)
 		attempts = attempts + 1
-		retry if(attempts < ma)
+		retry if(attempts < max_attempts)
 	end
 
 

@@ -81,25 +81,14 @@ module MasterviewScraper
       # On morph.io set the environment variable MORPH_AUSTRALIAN_PROXY to
       # http://morph:password@au.proxy.oaf.org.au:8888 replacing password with
       # the real password.
-      agent.agent.set_proxy("150.107.75.82:8888")
+      agent.agent.set_proxy(ENV["MORPH_AUSTRALIAN_PROXY"])
     end
     if timeout
       agent.open_timeout = timeout
       agent.read_timeout = timeout
     end
 
-	max_attempts = 5
-	attempts = 0
-	begin
-		puts agent.get("https://postman-echo.com/get").content
-		page = agent.get(url + "/")
-		rescue Exception => ex
-		puts "Error: #{ex}"
-		sleep(2**attempts)
-		attempts = attempts + 1
-		retry if(attempts < max_attempts)
-	end
-
+    page = agent.get(url + "/")
 
     if Pages::TermsAndConditions.on_page?(page)
       MasterviewScraper::Pages::TermsAndConditions.click_agree(page)
@@ -153,7 +142,7 @@ module MasterviewScraper
       # On morph.io set the environment variable MORPH_AUSTRALIAN_PROXY to
       # http://morph:password@au.proxy.oaf.org.au:8888 replacing password with
       # the real password.
-      agent.agent.set_proxy("150.107.75.82:8888")
+      agent.agent.set_proxy(ENV["MORPH_AUSTRALIAN_PROXY"])
     end
     if timeout
       agent.open_timeout = timeout

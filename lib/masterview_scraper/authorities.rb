@@ -2,11 +2,6 @@
 
 module MasterviewScraper
   AUTHORITIES = {
-    forbes: {
-      url: "http://planning.forbes.nsw.gov.au",
-      use_api: true,
-      force_detail: true
-    },
     gunnedah: {
       url: "http://datracking.gunnedah.nsw.gov.au",
       use_api: true,
@@ -58,15 +53,15 @@ module MasterviewScraper
       },
       force_detail: true
     },
-    shoalhaven: {
-      url: "http://www3.shoalhaven.nsw.gov.au/masterviewUI/modules/ApplicationMaster",
-      params: {
-        "4a" => "25,13,72,60,58,56",
-        "6" => "F"
-      },
-      state: "NSW",
-      force_detail: true
-    },
+    #shoalhaven: {
+    #  url: "http://www3.shoalhaven.nsw.gov.au/masterviewUI/modules/ApplicationMaster",
+    #  params: {
+    #    "4a" => "25,13,72,60,58,56",
+    #    "6" => "F"
+    #  },
+    #  state: "NSW",
+    #  force_detail: true
+    #},
     bundaberg: {
       url: "https://da.bundaberg.qld.gov.au",
       use_api: true,
@@ -92,19 +87,19 @@ module MasterviewScraper
       use_api: true,
       force_detail: true
     },
-    cessnock: {
-      url: "http://datracker.cessnock.nsw.gov.au",
-      use_api: true,
-      force_detail: true
-    },
-    griffith: {
-      url: "https://datracking.griffith.nsw.gov.au",
-      use_api: true,
-      # Has an incomplete certificate chain. See https://www.ssllabs.com/ssltest/analyze.html?d=datracking.griffith.nsw.gov.au
-      disable_ssl_certificate_check: true,
-      force_detail: true,
-      australian_proxy: true
-    },
+    #cessnock: {
+    #  url: "http://datracker.cessnock.nsw.gov.au",
+    #  use_api: true,
+    #  force_detail: true
+    #},
+    #griffith: {
+    #  url: "https://datracking.griffith.nsw.gov.au",
+    #  use_api: true,
+    #  # Has an incomplete certificate chain. See https://www.ssllabs.com/ssltest/analyze.html?d=datracking.griffith.nsw.gov.au
+    #  disable_ssl_certificate_check: true,
+    #  force_detail: true,
+    #  australian_proxy: true
+    #},
     lismore: {
       url: "https://tracker.lismore.nsw.gov.au",
       use_api: true,
@@ -126,13 +121,6 @@ module MasterviewScraper
       url: "https://datracker.singleton.nsw.gov.au:444",
       use_api: true,
       force_detail: true
-    },
-    byron: {
-      url: "https://datracker.byron.nsw.gov.au/MasterViewUI-External",
-      use_api: true,
-      page_size: 10,
-      force_detail: true,
-      australian_proxy: true
     },
     camden: {
       url: "https://planning.camden.nsw.gov.au",

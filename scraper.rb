@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-Bundler.require
+
 
 $LOAD_PATH << "./lib"
 

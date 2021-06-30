@@ -153,6 +153,7 @@ module MasterviewScraper
         "Withdrawn by Applicant",
         "Withdrawn/Cancelled",
         "Withdrawn/cancelled - Other",
+		"Withdrawn by Council",
         # As far as I can tell this is where a person can withdraw an application
         # after it's been approved by the council. This is used to avoid multiple
         # DAs for the same property conflicting with each other.

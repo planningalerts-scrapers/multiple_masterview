@@ -2,11 +2,6 @@
 
 module MasterviewScraper
   AUTHORITIES = {
-    forbes: {
-      url: "http://planning.forbes.nsw.gov.au",
-      use_api: true,
-      force_detail: true
-    },
     gunnedah: {
       url: "http://datracking.gunnedah.nsw.gov.au",
       use_api: true,
@@ -126,13 +121,6 @@ module MasterviewScraper
       url: "https://datracker.singleton.nsw.gov.au:444",
       use_api: true,
       force_detail: true
-    },
-    byron: {
-      url: "https://datracker.byron.nsw.gov.au/MasterViewUI-External",
-      use_api: true,
-      page_size: 10,
-      force_detail: true,
-      australian_proxy: true
     },
     camden: {
       url: "https://planning.camden.nsw.gov.au",

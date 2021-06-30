@@ -209,15 +209,6 @@ module MasterviewScraper
       },
       force_detail: true
     },
-    shoalhaven: {
-      url: "http://www3.shoalhaven.nsw.gov.au/masterviewUI/modules/ApplicationMaster",
-      params: {
-        "4a" => "25,13,72,60,58,56",
-        "6" => "F"
-      },
-      state: "NSW",
-      force_detail: true
-    },
     bundaberg: {
       url: "https://da.bundaberg.qld.gov.au",
       use_api: true,
@@ -240,11 +231,6 @@ module MasterviewScraper
     },
     bogan: {
       url: "http://datracker.bogan.nsw.gov.au:81",
-      use_api: true,
-      force_detail: true
-    },
-    cessnock: {
-      url: "http://datracker.cessnock.nsw.gov.au",
       use_api: true,
       force_detail: true
     },

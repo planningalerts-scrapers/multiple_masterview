@@ -80,8 +80,7 @@ module MasterviewScraper
 			  "Planning Consent Granted - DAP",
 			  "Completed",
 			  "Cancelled/Withdrawn",
-			  "Approved Delegated Authority",
-			  "Description:"
+			  "Approved Delegated Authority"
             ].include?(detail)
               # Do nothing
             else
@@ -161,7 +160,6 @@ module MasterviewScraper
         "Withdrawn",
         "Application Withdrawn",
         "Withdrawn by Applicant",
-		"Withdrawn by Council",
         "Withdrawn/Cancelled",
         "Withdrawn/cancelled - Other",
         # As far as I can tell this is where a person can withdraw an application
